@@ -1,0 +1,41 @@
+[2024-08-02 12:47:10,555: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-08-02 12:47:10,566: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-02 12:47:10,570: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-02 12:47:10,572: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-08-02 12:47:10,573: INFO: common: created directory at: artifacts]
+[2024-08-02 12:47:10,574: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-02 12:47:11,204: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Server: GitHub.com
+Date: Fri, 02 Aug 2024 11:47:11 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"da53604cd507b060929c48c2cb2a7eb8"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com api.githubcopilot.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com/v1/engines/github-completion/completions proxy.enterprise.githubcopilot.com/v1/engines/github-completion/completions *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=Sq8XPaRFtr6wgZ0yWfAH%2FYPBV7ni35ERBpK62VokuY5Je4em%2BE59SnFlDMkC1iGjSkvAoZOuvQEwcg5TqlWc68NvHiYVBXmJoWBbVk%2B%2BMVIw5IPUZvfIvvqwoRpg9XO0vQ3KeoEMula4U7mSoNH7LklVTsQIZUMKhOdsJ7EFDMljQf3QGSMvIJ1547vvaU7Yu1kMjiHI2sVcTUTMSWYkobodGPC0xWS%2BCJrFknCuh7xhkDZzmrEVf3Ou7nAu1GKh5NWib7nfLVGtWs%2Bqb4zurA%3D%3D--cklPPqH7vUF7%2BIJ%2B--KKMzOwz1wBlbyWP%2FK%2FqCPw%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.1093396145.1722599231; Path=/; Domain=github.com; Expires=Sat, 02 Aug 2025 11:47:11 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Sat, 02 Aug 2025 11:47:11 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: DD7A:348BBB:799D8E:88FF4E:66ACC73E
+connection: close
+
+]
+[2024-08-02 12:47:11,290: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\projects\llm-text-detection\src\AuthentiText\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "c:\projects\llm-text-detection\src\AuthentiText\components\data_ingestion.py", line 30, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\walea\miniconda3\envs\text-detection\lib\zipfile.py", line 1234, in __init__
+    self._RealGetContents()
+  File "C:\Users\walea\miniconda3\envs\text-detection\lib\zipfile.py", line 1301, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
