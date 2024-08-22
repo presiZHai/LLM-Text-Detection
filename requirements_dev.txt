@@ -1,0 +1,19 @@
+pandas
+numpy
+scikit-learn
+tensorflow
+streamlit
+
+
+# requirements_dev
+matplotlib
+scikit-learn
+seaborn
+wordcloud
+types-PyYAML
+tqdm
+python-box==6.0.2
+pyYAML
+ensure==1.0.2
+notebook
+-e .
